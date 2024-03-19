@@ -7,7 +7,7 @@ class PostWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
+        SizedBox(
           width: double.infinity,
           height: 500,
           child: Stack(

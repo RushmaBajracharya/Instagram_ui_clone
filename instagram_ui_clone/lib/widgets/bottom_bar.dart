@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:get/get.dart';
 import 'package:instagram_ui_clone/controller/route_controller.dart';
+import 'package:instagram_ui_clone/utils/colors.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -15,6 +16,7 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
+      color: AppColors.barColor,
       height: 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -23,7 +25,7 @@ class _BottomBarState extends State<BottomBar> {
               onTap: () {
                 routeController.selectPage("home");
               },
-              child: Icon(
+              child: const Icon(
                 Icons.home,
                 size: 30,
               )),
@@ -31,7 +33,7 @@ class _BottomBarState extends State<BottomBar> {
               onTap: () {
                 routeController.selectPage("search");
               },
-              child: Icon(
+              child: const Icon(
                 Icons.search,
                 size: 30,
               )),
@@ -39,7 +41,7 @@ class _BottomBarState extends State<BottomBar> {
               onTap: () {
                 routeController.selectPage("add_post");
               },
-              child: Icon(
+              child: const Icon(
                 Icons.add_outlined,
                 size: 30,
               )),
@@ -47,7 +49,7 @@ class _BottomBarState extends State<BottomBar> {
               onTap: () {
                 routeController.selectPage("reels");
               },
-              child: Icon(
+              child: const Icon(
                 Icons.home,
                 size: 30,
               )),
@@ -55,7 +57,7 @@ class _BottomBarState extends State<BottomBar> {
             onTap: () {
               routeController.selectPage("profile");
             },
-            child: CircleAvatar(
+            child: const CircleAvatar(
               radius: 20,
               backgroundImage: AssetImage('assets/images/profile2.jpg'),
             ),
