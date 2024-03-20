@@ -42,7 +42,7 @@ class _BottomBarState extends State<BottomBar> {
                 routeController.selectPage("add_post");
               },
               child: const Icon(
-                Icons.add_outlined,
+                Icons.add_box,
                 size: 30,
               )),
           GestureDetector(
