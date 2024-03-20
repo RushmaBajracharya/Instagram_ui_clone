@@ -50,7 +50,7 @@ class _BottomBarState extends State<BottomBar> {
                 routeController.selectPage("reels");
               },
               child: const Icon(
-                Icons.home,
+                Icons.video_camera_front,
                 size: 30,
               )),
           GestureDetector(
